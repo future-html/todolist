@@ -1,0 +1,261 @@
+body {
+  background-color: pink;
+  align-items: center;
+  text-align: center;
+  min-width: 700px;
+  min-height: auto;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+#title {
+  align-items: center;
+}
+ul {
+  font-size: 25px;
+  border: 1px black solid;
+  padding: 20px;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 500;
+  margin-left:150px;
+  margin-right: 150px;
+}
+
+button {
+  background-color: black;
+  margin: 20px;
+  width:150px; 
+}
+
+#button_form,
+#search,
+#clear_info {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+li {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 50px;
+  list-style: none;
+  box-shadow: 5px 5px 5px;
+}
+
+#button_form:hover,
+#search:hover,
+#clear_info:hover {
+  background-color: blueviolet;
+}
+
+#submit,
+#cancel,
+#updateData 
+#submitupdate{
+  background-color: aqua;
+  height: 40px;
+  width: 120px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+button p {
+  color: white;
+  font-size: 16px;
+}
+
+.modal_first,
+.modal_second,
+.modal_third,
+.modal_forth, 
+.modal_fifth{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  border: 1px black solid;
+  box-shadow: 10px 10px 10px;
+  padding: 20px;
+  background-color: azure;
+  min-width: 300px;
+}
+
+#name, 
+#date,
+#time,
+#duration, 
+#nameupdate, 
+#dateupdate,
+#timeupdate,
+#durationupdate{
+  border: 0.25px solid rgb(69, 69, 69);
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+}
+
+#searchbox {
+  border: 0.25px solid rgb(69, 69, 69);
+  height: 30px;
+  width: 300px;
+  font-size: 16px;
+  margin:20px; 
+  visibility: hidden;
+}
+#searchbox[placeholder] {
+  padding-left:10px; 
+}
+
+#finish,
+#delete,
+#edit,
+#moveback,
+#save {
+  position: relative; /* Add relative positioning to the buttons */
+  width: 100px;
+  height: 60px;
+  background-color: hotpink;
+  text-decoration: none;
+  color: rgb(239, 230, 230);
+  padding:10px; 
+  transition: 0.5s;
+  display: inline-block;
+  align-items: center;
+  margin: 5px;
+}
+
+#finish:hover,
+#delete:hover,
+#edit:hover,
+#moveback:hover,
+#save:hover {
+  background-color: aqua;
+}
+
+#moveback {
+  padding:0px; 
+}
+
+/* 
+#finish::after,
+#delete::after,
+#edit::after,
+#moveback::after,
+#save::after {
+  content: attr(title); /* Set tooltip content as the title attribute */
+  /* position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  z-index: 1; 
+} */
+/* 
+#finish:hover::after,
+#delete:hover::after,
+#edit:hover::after,
+#moveback:hover::after,
+#save:hover::after {
+  visibility: visible;
+  opacity: 1;
+} */ 
+
+#finish p,
+#delete p,
+#edit p,
+#moveback p,
+#save p {
+  color: black;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+.finish,
+.delete, 
+.moveback{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: azure;
+}
+
+.finish #confirmyestoComplete,
+.finish #confirmnotoComplete,
+.delete #confirmyestoDelete,
+.delete #confirmnotoDelete, 
+.moveback #confirmyestoMoveBack,
+.moveback #confirmnotoMoveBack{
+  height: 40px;
+  width: 100px;
+  color: white;
+  transition: 1s;
+}
+
+.finish #confirmyestoComplete:hover,
+.finish #confirmnotoComplete:hover,
+.delete #confirmyestoDelete:hover,
+.delete #confirmnotoDelete:hover {
+  color: black;
+  background-color: pink;
+}
+#operatebutton {
+  margin-top:10px; 
+  padding:0px;
+}
+
+/* 
+
+button[title] {
+  position: relative;
+}
+
+button[title]::after {
+  content: attr(title);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  padding-top:5px;
+  width:100px;
+  height:30px;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  z-index:1; 
+}
+
+button[title]:hover::after {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 10px; /* Add margin when hovering */
+  /* z-index: 1;
+} */ 
