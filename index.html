@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <div id = 'title'>
+      <ul id = 'todo'>Todo list</ul>
+      <ul id = 'done'>Done</ul>
+    </div>
+    
+    
+    <button id="button_form">
+      <p>Open the form</p>
+    </button>
+    <button id="search">
+      <p>Search</p>
+    </button>
+    <button id = 'clear_info'> 
+      <p>Clear data</p>
+    </button>
+    <div><input type = 'text' id = 'searchbox' placeholder="search your activity...."  onkeyup = 'searchLists()'></div>
+    
+    <div class="modal_first" id="modal_form">
+      <form id="form_toggle">
+        <h2>Name</h2>
+        <input type="text" id="name" >
+        <h2>Date</h2>
+        <input type="date" id="date" >
+        <h2>Time</h2>
+        <input type="time" id="time" >
+        <h2>Duration in minutes</h2>
+        <input type="number" id="duration" min = 1 step = 1>
+        <div>
+           <button type="submit" id="submit">Submit</button>
+           <button id = "cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div class = 'modal_second' id = 'modal_finish'>
+      <div id = 'complete confirm' class = 'finish'>
+        <h3>Are you sure to finish this tasks?</h3>
+        <div>
+          <button id = 'confirmyestoComplete'>Yes</button>
+          <button id = 'confirmnotoComplete'>No</button>
+        </div>
+      </div>
+    </div>
+    <div class = 'modal_third' id = 'modal_delete'>
+      <div id = 'delete confirm' class = 'delete'>
+        <h3>Are you sure to delete this tasks?</h3>
+        <div>
+          <button id = 'confirmyestoDelete' >Yes</button>
+          <button id = 'confirmnotoDelete' >No</button>
+        </div>
+      </div>
+    </div>
+    <div class = 'modal_forth' id = 'edit form'>
+    </div>
+    <div class = 'modal_fifth' id = 'modal_moveback'>
+      <div id = 'moveback confirm' class = 'moveback'>
+        <h3>Are you sure to Move Back this tasks?</h3>
+        <div>
+          <button id = 'confirmyestoMoveBack' >Yes</button>
+          <button id = 'confirmnotoMoveBack' >No</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
